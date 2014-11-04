@@ -30,5 +30,9 @@ module RoomTinyManager
       JSON.parse(raw_result)
     end
 
+    def post_a_room
+      
+    end
+
   end
 end

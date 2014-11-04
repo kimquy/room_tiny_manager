@@ -3,8 +3,11 @@ require 'spec_helper'
 module RoomTinyManager
   describe Fetcher do
     describe "#get_properties" do
-      it "returns list of properties" do 
 
+      let(:rooms) { RoomTinyManager::Fetcher.get_properties["result"] }
+
+      it "returns list of properties" do 
+        expect(rooms.length).to be > 0
       end
     end
 
@@ -19,5 +22,11 @@ module RoomTinyManager
         expect(room["city"]).not_to eq("New York")
       end
     end
+
+
+    describe "#post_a_room" do
+      pending 'Fill some test here'
+    end
+
   end
 end
