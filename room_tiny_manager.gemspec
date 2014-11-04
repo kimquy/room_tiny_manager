@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "room_tiny_manager"
   spec.version       = RoomTinyManager::VERSION
   spec.authors       = ["Long Nguyen"]
-  spec.email         = ["longn@vinagility.vn"]
+  spec.email         = ["long.polyglot@gmail.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
   spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = ""
@@ -19,5 +19,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.6"
+  spec.add_development_dependency "rspec", "~> 2.14.1"
   spec.add_development_dependency "rake"
 end
