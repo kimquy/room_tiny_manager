@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = RoomTinyManager::VERSION
   spec.authors       = ["Long Nguyen"]
   spec.email         = ["long.polyglot@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{A rubygem to get list of available rooms from roomorama.}
+  spec.description   = %q{A rubygem to get list of available rooms from roomorama.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
