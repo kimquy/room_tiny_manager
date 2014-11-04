@@ -18,7 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+* To create a new fetcher
+  input = "{\"properties\":[{\"property_adress\":\"72 Central Park W\",\"apartment_no\":\"7\",\"zip_code\":\"8002\",\"town\":\"Zurich\",\"country\":\"Swiss\",\"property_description\":\"fake description of the property\",\"bedrooms_no\":\"1\",\"max_people\":\"2\",\"source_id\":\"68123\"}]}"
+
+  fetcher = RoomTinyManager::Fetcher.new(input)
+
+ * To get properties
+  fetcher.get_properties
+  
+ * To post a room
+  fetcher.post_a_room 
+
 
 ## Contributing
 

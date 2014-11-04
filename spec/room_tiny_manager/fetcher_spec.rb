@@ -15,8 +15,6 @@ module RoomTinyManager
 
       let(:fetcher1) { RoomTinyManager::Fetcher.new(sigle_input) }
       let(:fetcher2) { RoomTinyManager::Fetcher.new(multiple_inputs) }
-      let(:endpoint) { "https://api.roomorama.com/v1.0/host/rooms.json" }
-      let(:access_token) { "0WGRIQTVZyf9a6kudI8zmq5QAmMCGzRlhD1jq97T54" }
 
       it "returns 1 property" do 
         expect(fetcher1.get_properties.count).to eq(1)
@@ -27,9 +25,7 @@ module RoomTinyManager
       end
 
       it "post new room" do
-        properties = fetcher1.get_properties
-        raw_result = RestClient.get(endpoint, { params: properties.first.merge(access_token: access_token) } )
-        result = JSON.parse(raw_result)
+        result = fetcher1.post_a_room
         expect(result["status"]).to eq(200)
       end
     end
