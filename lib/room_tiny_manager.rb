@@ -10,6 +10,9 @@ end
 module RoomTinyManager
 
   class Fetcher
+
+    ## FIXME: I added my access_token
+    ## Can be more general, that some one use the gem can set their access token
     ROOMS_END_POINT = "https://api.roomorama.com/v1.0/rooms.json"
     ACCESS_TOKEN = "0WGRIQTVZyf9a6kudI8zmq5QAmMCGzRlhD1jq97T54"
 
